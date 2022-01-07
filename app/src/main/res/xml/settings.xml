@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <ListPreference
+        android:id="@+id/short_ping_attempts"
+        android:title="Short Pings"
+        android:key="@string/short_pings_key"
+        android:summary="How many pings will be done before averaging"
+        android:dialogTitle="Ping Attempts:"
+        android:entries="@array/short_pings_count"
+        android:entryValues="@array/short_pings_count"
+        android:defaultValue="@string/ping_count_5"
+        app:iconSpaceReserved="false"/>
+
+    <ListPreference
+        android:id="@+id/long_ping_attempts"
+        android:title="Long Pings"
+        android:key="@string/long_pings_key"
+        android:summary="How many pings will be done before averaging"
+        android:dialogTitle="Ping Attempts:"
+        android:entries="@array/long_pings_count"
+        android:entryValues="@array/long_pings_count_value"
+        android:defaultValue="@string/ping_count_50_value"
+        app:iconSpaceReserved="false"/>
+
+    <SwitchPreference
+        android:id="@+id/show_dialog"
+        android:title="@string/warning_prefs_title"
+        android:key="@string/warning_dialog_key"
+        android:summary="@string/warning_summary"
+        android:defaultValue="true"
+        app:iconSpaceReserved="false"/>
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="short_pings_count">
+        <item>@string/ping_count_5</item>
+        <item>@string/ping_count_10</item>
+        <item>@string/ping_count_15</item>
+    </string-array>
+
+    <string-array name="long_pings_count">
+        <item>@string/ping_count_50</item>
+        <item>@string/ping_count_100</item>
+        <item>@string/ping_count_150</item>
+    </string-array>
+
+    <string-array name="long_pings_count_value">
+        <item>@string/ping_count_50_value</item>
+        <item>@string/ping_count_100_value</item>
+        <item>@string/ping_count_150_value</item>
+    </string-array>
+</resources>

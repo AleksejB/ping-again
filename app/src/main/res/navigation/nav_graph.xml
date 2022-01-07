@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/hostListFragment">
+
+    <fragment
+        android:id="@+id/hostListFragment"
+        android:name="com.thestart.pingagain.ui.list.HostListFragment"
+        android:label="List of Hosts"
+        tools:layout="@layout/fragment_host_list" >
+        <action
+            android:id="@+id/action_hostListFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_hostListFragment_to_settingsFragment"
+            app:destination="@id/settings_menu_option" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.thestart.pingagain.ui.detail.DetailFragment"
+        android:label="Host Info" >
+        <argument
+            android:name="hostId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings_menu_option"
+        android:name="com.thestart.pingagain.ui.settings.SettingsFragment"
+        android:label="Settings" />
+</navigation>
