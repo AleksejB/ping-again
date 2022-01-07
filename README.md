@@ -27,10 +27,10 @@ For instance, the IP address of the host, packets lost and sent, standard deviat
 average ping value.
 
 ## Short Pings vs Long Pings
-Short pings are pings for which the app will send 5-15 packets to the host (the nubmer can 
+Short pings are pings for which the app will send 5-15 ICMP packets to the host (the nubmer can 
 be changed in settings) before avergaing the ping value.
 
-Long Pings are pings for which the app will send 50-150 packets to the host (also can be
+Long Pings are pings for which the app will send 50-150 ICMP packets to the host (also can be
 changed in settings) before averaging the ping value.
 
 ## Screenshots & Video
