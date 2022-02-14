@@ -15,7 +15,7 @@ The app uses the following android libraries and classes:
 For pinging functionality a 3rd party library was used:
 - [Network Diagnosis Library by qiniu](https://github.com/qiniu/android-netdiag)
 
-The app follows MVVM design pattern.
+The app follows MVC design pattern.
 ## App's functionality
 The app allows the user to enter an IPv4 address or a domain address, which will be added to 
 the list of the availible hosts to ping. The user can perform short pings for all the hosts
